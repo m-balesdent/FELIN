@@ -14,8 +14,21 @@ from trajectory.modele_atmos import compute_atmos
 
 def simulation_fallout_stage_1(t,x, Parameters):
 
+    '''r = x[0] # to be included at the end of the implemented function
+    V = x[1]
+    gamma = x[2]
+    longi = x[3]
+    m = x[4]
 
+    #Parameters
+    Diameter = Parameters['geometry']['Diameter']
+    CX = Parameters['aero']['CX']
+    CZ = Parameters['aero']['CZ']
+    
     Integration = Parameters['simu']['Mode_simu']
+    Integration = Parameters['simu']['Mode_simu']'''
+
+
     # this function is volontary empty
 
     if Integration == 1.:
@@ -53,3 +66,4 @@ def simulation_fallout_stage_1(t,x, Parameters):
                 alt,alpha,theta,
                 rho, CX,CZ,thrust,Mass_flow_rate,distance,lat)
 	'''
+
